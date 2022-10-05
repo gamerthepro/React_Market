@@ -10,7 +10,7 @@ function Header(props) {//при помощи props передаем данны�
 
 	return (//рендерим doom дерево
 		<header>
-			<Link className="header__link" to="/"> {/* при нажатии на блок переходим на главную страничку */}
+			<Link className="header__link" to=""> {/* при нажатии на блок переходим на главную страничку */}
 				<div className="header__left">
 					<img className="header__logo" src="images/logo.svg" alt="logo"/>
 					<div className="header__info">
@@ -26,12 +26,12 @@ function Header(props) {//при помощи props передаем данны�
 					<span className="header__sum">{totalPrice} руб</span>
 				</li>
 				<li>
-					<Link className="header__link" to="/favorites"> {/* при нажатии на блок переходим на страничку favorites*/}
+					<Link className="header__link" to="favorites"> {/* при нажатии на блок переходим на страничку favorites*/}
 						<img className="header__favorites" src="images/like-onliked.svg" alt="favorites"/>
 					</Link>
 				</li>
 				<li>
-					<Link className="header__link" to="/orders"> {/* при нажатии на блок переходим на страничку Orders*/}
+					<Link className="header__link" to="orders"> {/* при нажатии на блок переходим на страничку Orders*/}
 						<img className="header__person" src="images/personal_area.svg" alt="personal_area"/>
 					</Link>
 				</li>
