@@ -7,3 +7,7 @@
 ## Стек технологий
 	
 Git, GitHub, Visual Studio Code, Figma, Terminal, HTML5, SASS, Node.js, JavaScript, TypeScript, React.
+
+## Ссылка на сайт
+
+https://gamerthepro.github.io/React_Market/
