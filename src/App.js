@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { Routes, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Header from './components/Header/Header'
 import PopupCart from './components/PopupCart/PopupCart';
 import AppContext from './context';
@@ -117,28 +117,26 @@ function App() {
 				<Header
 					onOpenCart = {() => setPopupCartOpen(true)}//при помощи onOpenCart меняем состояние хука (setPopupCartOpen)
 				/>
-				<Routes>
-					{/* при помощи роутинга отображаем страничку Home (компонент) */}
-					<Route exact path='' element={<>
-						<Home
-							items = {items}
-							cartItems = {cartItems}
-							searchValue = {searchValue}
-							inputClear = {inputClear}
-							onChangeSearchInput = {onChangeSearchInput}
-							addToCart = {addToCart}
-							addFavorite = {addFavorite}
-							isLoading = {isLoading}
-						/>
-					</>}></Route>
-					{/* при помощи роутинга отображаем страничку Favorites (компонент) */}
-					<Route exact path='favorites' element={<>
-						<Favorites/>
-					</>}></Route>
-					<Route exact path='orders' element={<>
-						<Orders/>
-					</>}></Route>
-				</Routes>
+				{/* при помощи роутинга отображаем страничку Home (компонент) */}
+				<Route path=''  exact>
+					<Home
+						items = {items}
+						cartItems = {cartItems}
+						searchValue = {searchValue}
+						inputClear = {inputClear}
+						onChangeSearchInput = {onChangeSearchInput}
+						addToCart = {addToCart}
+						addFavorite = {addFavorite}
+						isLoading = {isLoading}
+					/>
+				</Route>
+				{/* при помощи роутинга отображаем страничку Favorites (компонент) */}
+				<Route path='favorites' exact>
+					<Favorites/>
+				</Route>
+				<Route path='orders' exact>
+					<Orders/>
+				</Route>
 				<PopupCart 
 				items = {cartItems}
 				onClose = {() => setPopupCartOpen(false)}
