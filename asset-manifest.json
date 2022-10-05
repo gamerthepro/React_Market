@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/React_Market/static/css/main.e26394a6.css",
+    "main.js": "/React_Market/static/js/main.0ebd0721.js",
+    "static/media/like_hover.svg": "/React_Market/static/media/like_hover.fe1d71d48a8c52f1ac73.svg",
+    "index.html": "/React_Market/index.html",
+    "main.e26394a6.css.map": "/React_Market/static/css/main.e26394a6.css.map",
+    "main.0ebd0721.js.map": "/React_Market/static/js/main.0ebd0721.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e26394a6.css",
+    "static/js/main.0ebd0721.js"
+  ]
+}
